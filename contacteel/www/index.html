@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/themes/appTheme.min.css">
+    <link rel="stylesheet" href="lib/themes/jquery.mobile.icons.min.css">
+    <link rel="stylesheet" href="lib/jquery.mobile.structure-1.4.5.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="cordova.js"></script>
+    <title>Contacteel</title>
+</head>
+<body>
+    <!-- Page de la liste des contacts -->
+    <div data-role="page" id="home">
+        <div data-role="header" class="app-header">
+            <h1>CONTACTEEL</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <a href="#addContactPage" data-role="button" data-icon="plus" data-iconpos="right" class="btn-add">Ajouter</a>
+            <ul id="contactList" data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="Rechercher">
+                <!-- Les contacts seront ajoutés ici dynamiquement -->
+            </ul>
+        </div>
+        <div data-role="footer" class="app-footer" data-position="fixed">
+            <h1>&copy; 2024 CONTACTEEL</h1>
+        </div>
+    </div>
+
+    <!-- Page d'ajout de contact -->
+    <div data-role="page" id="addContactPage">
+        <div data-role="header" class="app-header">
+            <a href="#home" data-icon="back" data-iconpos="notext" data-rel="back" class="ui-btn-left"></a>
+            <h1>Nouveau Contact</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <form id="addContactForm">
+                <div class="ui-field-contain">
+                    <div style="display: flex; flex-direction: column">
+                        <div style="flex: 1; margin-right: 10px;">
+                            <label for="firstName">Prénom:</label>
+                            <input type="text" name="firstName" id="firstName" required>
+                        </div>
+                        <div style="flex: 1;">
+                            <label for="lastName">Nom:</label>
+                            <input type="text" name="lastName" id="lastName" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-field-contain">
+                    <label for="phoneNumber">Téléphone:</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                </div>
+                <button type="submit" data-theme="b" class="btn-add">Nouveau contact</button>
+            </form>
+        </div>
+        <div data-role="footer" class="app-footer" data-position="fixed">
+            <h1>&copy; 2024 CONTACTEEL</h1>
+        </div>
+    </div>
+</body>
+</html>

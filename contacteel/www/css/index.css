@@ -1,0 +1,108 @@
+/* Style général */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+/* Style pour les en-têtes */
+.app-header, .app-footer {
+    background-color: #4CAF50; /* Vert */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.app-header h1, .app-footer h1 {
+    margin: 0;
+}
+
+/* Style pour les boutons Ajouter */
+.btn-add {
+    background-color: #4CAF50; /* Vert */
+    border-color: #4CAF50;
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    padding: 12px 0;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-add:hover {
+    background-color: #45a049; /* Vert plus foncé */
+    border-color: #45a049;
+}
+
+/* Style pour les inputs et labels */
+/* .ui-field-contain label {
+    color: #4CAF50; 
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+} */
+
+/* .ui-field-contain input {
+    border: none;
+    border-bottom: 2px solid #4CAF50; 
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    width: calc(50% - 22px); 
+    margin-bottom: 15px;
+    border-radius: 0;
+    display: inline-block;
+    vertical-align: top;
+} */
+/* 
+.ui-field-contain input:focus {
+    border-color: #45a049; 
+    outline: none;
+}
+
+.ui-field-contain {
+    margin-bottom: 15px;
+} */
+
+/* Style pour la liste des contacts */
+#contactList {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contactList li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+#contactList li:last-child {
+    border-bottom: none;
+}
+
+#contactList li a {
+    color: #333;
+    text-decoration: none;
+}
+
+#contactList li a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#contactList li a h1, #contactList li a p {
+    margin: 0;
+}
+
+/* Footer */
+.app-footer {
+    font-size: 12px;
+}
